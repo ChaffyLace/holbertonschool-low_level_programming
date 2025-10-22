@@ -7,8 +7,9 @@
  */
 int main(void)
 {
+	i == num
 
-	for (i = 0; i <= 9)
+	for (num = 0; num <= 9)
 	{
 		putchar(i + "0");
 	}
