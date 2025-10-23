@@ -10,11 +10,17 @@ int main(void)
 {
 	int n;
 
-	for (n = 0 ; n < 10 ; n++)
+	for (n = 0 ; n < 16 ; n++)
 	{
-		putchar(n + '0');
+		if (n < 10)
+		{
+			putchar('0' + n);
+		}
+		else
+		{
+			putchar(87 + n);
+		}
 	}
 	putchar('\n');
 	return (0);
 }
-
