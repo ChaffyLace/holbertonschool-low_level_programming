@@ -1,6 +1,4 @@
-habet.c
-215 o
-#include "holberton.h"
+#include <stdio.h>
 /**
  * print_alphabet - wirte the the lower-case alphabet on a line.
  *
