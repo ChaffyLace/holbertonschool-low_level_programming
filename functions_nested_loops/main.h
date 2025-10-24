@@ -5,6 +5,7 @@ int _isalpha(int c);
 void jack_bauer(void);
 void times_table(void);
 int _islower(int c);
+int add(int, int);
 int _abs(int);
 int print_last_digit(int);
 int _putchar(char c);
