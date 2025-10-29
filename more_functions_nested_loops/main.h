@@ -1,4 +1,5 @@
 #include <stdio.h>
+#ifndef
 
 /**
  * main - check the code
