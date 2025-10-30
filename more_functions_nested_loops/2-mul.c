@@ -9,6 +9,6 @@
  */
 int mul(int a, int b)
 {
-    return (a * b);  // ✅ both a and b are used
+    return (a * b);
 }
 
