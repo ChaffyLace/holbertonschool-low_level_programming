@@ -1,4 +1,4 @@
-#include "Main.h"
+#include "main.h"
 
 /**
  * _memcpy() - checks for uppercase character
