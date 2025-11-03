@@ -7,7 +7,7 @@
  * Return: dest if c is uppercase, 0 otherwis
  */
 
-char *_memcpy(char *dest, char *src, unsigned int n);
+char *_memcpy(char *dest, char *src, unsigned int n)
 {
 	unsigned int i;
 	unsigned char *k = dest;
