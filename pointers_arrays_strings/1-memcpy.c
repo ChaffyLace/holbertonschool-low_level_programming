@@ -1,21 +1,22 @@
 #include "main.h"
 
 /**
- * _memcpy() - checks for uppercase character
- * @c: the character to check
+ * _memcpy - copies n bytes from memory area src to memory area dest
+ * @dest: destination memory area
+ * @src: source memory area
+ * @n: number of bytes to copy
  *
- * Return: dest if c is uppercase, 0 otherwis
+ * Return: pointer to dest
  */
-
 char *_memcpy(char *dest, char *src, unsigned int n)
 {
-	unsigned int i;
-	unsigned char *k = dest;
-	const unsigned char *p = src;
+    unsigned int i;
 
-	for(i = 0; i < n; i++);
-	k[i] = p[i];
-Â
-	return (dest);
+    for (i = 0; i < n; i++)
+    {
+        dest[i] = src[i];
+    }
+
+    return (dest);
 }
 
