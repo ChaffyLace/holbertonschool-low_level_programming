@@ -6,26 +6,26 @@
  * Return: Always 0.
  */
 unsigned int _strspn(char *s, char *accept) {
-    unsigned int cpt = 0;
-    char *a;
+	unsigned int cpt = 0;
+	char *a;
+	int found = 0;
 
     while (*s != '\0') {
         a = accept;
-        int found = 0;
 
         while (*a != '\0') {
             if (*s == *a) {
-                found = 1; 
+                found = 1;
                 break;
             }
             a++;
         }
 
-        if (found == 0) 
-            break; 
+        if (found == 0)
+            break;
 
-        cpt++; 
-        s++; 
+        cpt++;
+        s++;
     }
-    return cpt; 
+    return cpt;
 }
