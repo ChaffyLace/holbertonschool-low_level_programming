@@ -1,10 +1,11 @@
 #include "main.h"
 
 /**
- * _strspn - calcule la longueur du segment initial d'une chaîne
- *            qui ne contient que des caractères acceptés
- * @s: chaîne principale à analyser
- * @accept: ensemble de caractères autorisés
+ * _strspn - calcule la longueur du segment initial d'une chaine
+ *            qui ne contient que des caractres acceptes
+ * @s: chaine principale analyser
+ * @accept: ensemble de caractres autorise�
+ * Description : osdisudoi
  **/
 unsigned int _strspn(char *s, char *accept)
 {
