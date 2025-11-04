@@ -1,10 +1,14 @@
 #include "main.h"
 #include <stdio.h>
 
+
 /**
- * main - check the code
+ * print_diagsums - affiche la somme des deux diagonales
+ * d'une matrice carrée d'entiers
+ * @a: pointeur vers le premier élément de la matrice
+ * @size: taille de la matrice (nombre de lignes ou colonnes)
  *
- * Return: Always 0.
+ * Return: rien (void)
  */
 void print_diagsums(int *a, int size)
 {
