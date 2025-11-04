@@ -1,10 +1,11 @@
 #include "main.h"
 
 /**
- * main - check the code
- *
- * Return: Always 0.
- */
+ * _strspn - calcule la longueur du segment initial d'une chaîne
+ *            qui ne contient que des caractères acceptés
+ * @s: chaîne principale à analyser
+ * @accept: ensemble de caractères autorisés
+ **/
 unsigned int _strspn(char *s, char *accept)
 {
 	unsigned int cpt = 0;
