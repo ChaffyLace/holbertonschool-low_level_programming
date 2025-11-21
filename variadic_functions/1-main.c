@@ -1,5 +1,4 @@
-#include <stdio.h>
-#include "dog.h"
+#include "variadic_functions.h"
 
 /**
  * main - check the code
@@ -8,9 +7,6 @@
  */
 int main(void)
 {
-    struct dog my_dog;
-
-    init_dog(&my_dog, "Poppy", 3.5, "Bob");
-    printf("My name is %s, and I am %.1f :) - Woof!\n", my_dog.name, my_dog.age);
+    print_numbers(", ", 4, 0, 98, -1024, 402);
     return (0);
 }
