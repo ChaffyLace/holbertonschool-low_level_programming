@@ -3,31 +3,29 @@
 #include <stdlib.h>
 
 /**
- * main - entry
- * @ac: ac
- * @av: av
- * Return: void
+ * main - entry point
  */
-
 int main(int ac, char **av)
 {
 	int (*op)(int, int);
-	int i, j, res;
+	int a, b;
 
 	if (ac != 4)
 	{
 		printf("Error\n");
 		exit(98);
 	}
+
 	op = get_op_func(av[2]);
-	if (op == NULL || av[2][1] != '\0')
+	if (op == NULL)
 	{
 		printf("Error\n");
 		exit(99);
 	}
-	i = atoi(av[1]);
-	j = atoi(av[3]);
-	res = op(i, j);
-	printf("%d\n", res);
+
+	a = atoi(av[1]);
+	b = atoi(av[3]);
+
+	printf("%d\n", op(a, b));
 	return (0);
 }
