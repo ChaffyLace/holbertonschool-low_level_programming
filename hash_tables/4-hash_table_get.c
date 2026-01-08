@@ -1,18 +1,25 @@
-#include <stdlib.h>
-#include <string.h>
-#include <stdio.h>
 #include "hash_tables.h"
 
 /**
- * main - check the code
- *
- * Return: Always EXIT_SUCCESS.
+ * hash_table_get - retrieve the value of a key
+ * @ht: hash table
+ * @key: key
+ * Return: value
  */
-int main(void)
+char *hash_table_get(const hash_table_t *ht, const char *key)
 {
-    hash_table_t *ht;
+	unsigned long int idx;
+	hash_node_t *node;
 
-    ht = hash_table_create(1024);
-    hash_table_set(ht, "betty", "cool");
-    return (EXIT_SUCCESS);
+	if (!ht || !key || strlen(key) == 0)
+		return (NULL);
+	idx = key_index((const unsigned char *)key, ht->size);
+	node = ht->array[idx];
+	while (node)
+	{
+		if (strcmp(node->key, key) == 0)
+			return (node->value);
+		node = node->next;
+	}
+	return (NULL);
 }
